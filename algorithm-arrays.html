@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Algorithm Arrays</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+    <div class="flex flex-col h-screen">
+        <!-- Header -->
+        <div class="bg-white p-4 flex items-center border-b border-gray-200">
+            <button class="p-2">
+                <svg viewBox="0 0 24 24" class="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="3"/>
+                    <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/>
+                </svg>
+            </button>
+            <h1 class="text-xl font-bold flex-1 text-center">Algorithm Arrays</h1>
+            <div class="w-10"></div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="flex-1 overflow-y-auto p-4">
+            <!-- Base Weights Panel -->
+            <a href="base-weights.html" class="w-full mb-6 p-4 bg-white rounded-lg border border-gray-200 flex items-center justify-center hover:bg-gray-50">
+                <svg viewBox="0 0 24 24" class="w-6 h-6 mr-2 text-gray-600" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="4" y="3" width="16" height="18" rx="2"/>
+                    <line x1="8" y1="7" x2="8" y2="17"/>
+                    <line x1="12" y1="7" x2="12" y2="17"/>
+                    <line x1="16" y1="7" x2="16" y2="17"/>
+                </svg>
+                <span class="text-lg font-medium text-gray-700">Base Weights</span>
+            </a>
+
+            <!-- Algorithm List -->
+            <div class="space-y-3">
+                <button class="w-full p-4 rounded-lg flex items-center justify-between bg-blue-50 border-2 border-blue-500">
+                    <div class="flex items-center">
+                        <div class="mr-3">
+                            <svg viewBox="0 0 24 24" class="w-6 h-6 text-green-500" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M4 8 L20 8 M4 16 L20 16"/>
+                            </svg>
+                        </div>
+                        <span class="font-medium text-green-500">Sound Design</span>
+                    </div>
+                    <span class="text-sm text-green-500">Active</span>
+                </button>
+
+                <button class="w-full p-4 rounded-lg flex items-center justify-between bg-white border border-gray-200">
+                    <div class="flex items-center">
+                        <div class="mr-3">
+                            <svg viewBox="0 0 24 24" class="w-6 h-6 text-gray-400" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M4 8 L20 8 M4 16 L20 16"/>
+                            </svg>
+                        </div>
+                        <span class="font-medium text-gray-700">Artificial Intelligence</span>
+                    </div>
+                </button>
+
+                <button class="w-full p-4 rounded-lg flex items-center justify-between bg-white border border-gray-200">
+                    <div class="flex items-center">
+                        <div class="mr-3">
+                            <svg viewBox="0 0 24 24" class="w-6 h-6 text-gray-400" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M4 8 L20 8 M4 16 L20 16"/>
+                            </svg>
+                        </div>
+                        <span class="font-medium text-gray-700">The Group Chat</span>
+                    </div>
+                </button>
+
+                <!-- New Algorithm Button -->
+                <a href="algorithm-editor.html" class="w-full p-4 rounded-lg border-2 border-dashed border-gray-300 flex items-center justify-center text-gray-500 hover:bg-gray-50">
+                    <svg viewBox="0 0 24 24" class="w-5 h-5 mr-2" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="12" y1="5" x2="12" y2="19"/>
+                        <line x1="5" y1="12" x2="19" y2="12"/>
+                    </svg>
+                    Create New Algorithm
+                </a>
+            </div>
+        </div>
+
+        <!-- Navigation -->
+        <nav class="bg-white border-t border-gray-200 p-4">
+            <div class="grid grid-cols-5 items-center relative">
+                <a href="main-feed.html" class="text-gray-500 text-center">Home</a>
+                <a href="algorithm-arrays.html" class="text-blue-500 text-center">Algorithm</a>
+                <a href="#" class="text-gray-500 text-center">Camera</a>
+                <a href="search.html" class="text-gray-500 text-center">Search</a>
+                <a href="mailman.html" class="text-gray-500 text-center">Mail</a>
+            </div>
+        </nav>
+    </div>
+</body>
+</html>

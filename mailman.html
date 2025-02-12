@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MailMan Settings</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .switch {
+            position: relative;
+            display: inline-block;
+            width: 44px;
+            height: 24px;
+            background-color: #e5e7eb;
+            border-radius: 9999px;
+            transition: background-color 0.2s;
+        }
+        .switch.active {
+            background-color: #3b82f6;
+        }
+        .switch::after {
+            content: '';
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background-color: white;
+            top: 2px;
+            left: 2px;
+            transition: transform 0.2s;
+        }
+        .switch.active::after {
+            transform: translateX(20px);
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+    <div class="flex flex-col h-screen">
+        <!-- Header -->
+        <div class="bg-white p-4 flex items-center border-b border-gray-200">
+            <a href="main-feed.html" class="p-2">
+                <svg viewBox="0 0 24 24" class="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M19 12H5M12 19l-7-7 7-7"/>
+                </svg>
+            </a>
+            <div class="flex-1 flex items-center justify-center space-x-2">
+                <svg viewBox="0 0 24 24" class="w-5 h-5 text-gray-600" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M22 6c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2"/>
+                    <path d="M22 6l-10 7L2 6"/>
+                    <path d="M2 6v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6"/>
+                </svg>
+                <h1 class="text-xl font-bold">MailMan</h1>
+            </div>
+            <div class="w-10"></div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="flex-1 overflow-y-auto p-4">
+            <!-- Filter Settings -->
+            <div class="bg-white rounded-lg p-4 mb-4">
+                <h2 class="text-lg font-semibold mb-4">Filter Settings</h2>
+                <div class="space-y-4">
+                    <div class="flex items-center justify-between">
+                        <span class="text-gray-700">Following only</span>
+                        <button onclick="this.classList.toggle('active')" class="switch active"></button>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <span class="text-gray-700">Flagged terms</span>
+                        <button onclick="this.classList.toggle('active')" class="switch"></button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Behavior Settings -->
+            <div class="bg-white rounded-lg p-4">
+                <h2 class="text-lg font-semibold mb-4">Behavior</h2>
+                <div class="space-y-4">
+                    <div class="flex items-center justify-between">
+                        <span class="text-gray-700">Mini-Me</span>
+                        <button onclick="this.classList.toggle('active')" class="switch active"></button>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <span class="text-gray-700">Preliminary question</span>
+                        <button onclick="this.classList.toggle('active')" class="switch"></button>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <span class="text-gray-700">Inference</span>
+                        <button onclick="this.classList.toggle('active')" class="switch active"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Navigation -->
+        <nav class="bg-white border-t border-gray-200 p-4">
+            <div class="grid grid-cols-5 items-center relative">
+                <a href="main-feed.html" class="text-gray-500 text-center">Home</a>
+                <a href="algorithm.html" class="text-gray-500 text-center">Algorithm</a>
+                <a href="#" class="text-gray-500 text-center">Camera</a>
+                <a href="search.html" class="text-gray-500 text-center">Search</a>
+                <a href="mailman.html" class="text-blue-500 text-center">Mail</a>
+            </div>
+        </nav>
+    </div>
+</body>
+</html>

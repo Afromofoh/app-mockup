@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+    <div class="flex flex-col h-screen">
+        <!-- Search Header -->
+        <div class="bg-white p-4 shadow-sm">
+            <div class="flex items-center bg-gray-100 rounded-full px-4 py-2">
+                <svg viewBox="0 0 24 24" class="w-5 h-5 text-gray-400" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="11" cy="11" r="8"/>
+                    <path d="M21 21L16.65 16.65"/>
+                </svg>
+                <input type="text" placeholder="Search" class="ml-2 flex-1 bg-transparent outline-none">
+            </div>
+        </div>
+
+        <!-- Search Results -->
+        <div class="flex-1 overflow-y-auto p-4">
+            <!-- Users Section -->
+            <div class="mb-6">
+                <h2 class="text-sm font-semibold text-gray-500 mb-2">Users</h2>
+                <div class="space-y-2">
+                    <button class="w-full bg-white p-3 rounded-lg flex items-center">
+                        <div class="w-10 h-10 rounded-full bg-gray-200 flex items-center justify-center">
+                            <svg viewBox="0 0 24 24" class="w-5 h-5 text-gray-400" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+                                <circle cx="12" cy="7" r="4"/>
+                            </svg>
+                        </div>
+                        <span class="ml-3">user123</span>
+                    </button>
+                    <button class="w-full bg-white p-3 rounded-lg flex items-center">
+                        <div class="w-10 h-10 rounded-full bg-gray-200 flex items-center justify-center">
+                            <svg viewBox="0 0 24 24" class="w-5 h-5 text-gray-400" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+                                <circle cx="12" cy="7" r="4"/>
+                            </svg>
+                        </div>
+                        <span class="ml-3">user789</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Tags Section -->
+            <div class="mb-6">
+                <h2 class="text-sm font-semibold text-gray-500 mb-2">Tags</h2>
+                <div class="space-y-2">
+                    <button class="w-full bg-white p-3 rounded-lg flex items-center">
+                        <svg viewBox="0 0 24 24" class="w-5 h-5 text-gray-400" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M7 20l4-16m2 16l4-16"/>
+                        </svg>
+                        <span class="ml-2">CCRMA</span>
+                    </button>
+                    <button class="w-full bg-white p-3 rounded-lg flex items-center">
+                        <svg viewBox="0 0 24 24" class="w-5 h-5 text-gray-400" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M7 20l4-16m2 16l4-16"/>
+                        </svg>
+                        <span class="ml-2">openai</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Algorithms Section -->
+            <div class="mb-6">
+                <h2 class="text-sm font-semibold text-gray-500 mb-2">Algorithms</h2>
+                <div class="space-y-2">
+                    <button class="w-full bg-white p-3 rounded-lg flex items-center">
+                        <svg viewBox="0 0 24 24" class="w-5 h-5 mr-2 text-gray-400" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M4 8 L20 8 M4 16 L20 16"/>
+                        </svg>
+                        <span>Sonification</span>
+                    </button>
+                    <button class="w-full bg-white p-3 rounded-lg flex items-center">
+                        <svg viewBox="0 0 24 24" class="w-5 h-5 mr-2 text-gray-400" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M4 8 L20 8 M4 16 L20 16"/>
+                        </svg>
+                        <span>Neuroscience</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- AR Artifacts Section -->
+            <div>
+                <h2 class="text-sm font-semibold text-gray-500 mb-2">AR Artifacts</h2>
+                <div class="space-y-2">
+                    <button class="w-full bg-white p-3 rounded-lg flex items-center">
+                        <svg viewBox="0 0 24 24" class="w-5 h-5 mr-2 text-gray-400" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="4" y="4" width="16" height="16" rx="2"/>
+                            <path d="M4 12 L20 12"/>
+                            <path d="M12 4 L12 20"/>
+                            <circle cx="12" cy="12" r="3"/>
+                        </svg>
+                        <span>Toroidal Field</span>
+                    </button>
+                    <button class="w-full bg-white p-3 rounded-lg flex items-center">
+                        <svg viewBox="0 0 24 24" class="w-5 h-5 mr-2 text-gray-400" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="4" y="4" width="16" height="16" rx="2"/>
+                            <path d="M4 12 L20 12"/>
+                            <path d="M12 4 L12 20"/>
+                            <circle cx="12" cy="12" r="3"/>
+                        </svg>
+                        <span>Valentine's heart</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Navigation -->
+        <nav class="bg-white border-t border-gray-200 p-4">
+            <div class="grid grid-cols-5 items-center relative">
+                <a href="main-feed.html" class="text-gray-500 text-center">Home</a>
+                <a href="algorithm.html" class="text-gray-500 text-center">Algorithm</a>
+                <a href="#" class="text-gray-500 text-center">Camera</a>
+                <a href="search.html" class="text-blue-500 text-center">Search</a>
+                <a href="mailman.html" class="text-gray-500 text-center">Mail</a>
+            </div>
+        </nav>
+    </div>
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Base Weights</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+    <div class="flex flex-col h-screen">
+        <!-- Header -->
+        <div class="bg-white p-4 flex items-center border-b border-gray-200">
+            <a href="algorithm.html" class="p-2">
+                <svg viewBox="0 0 24 24" class="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M19 12H5M12 19l-7-7 7-7"/>
+                </svg>
+            </a>
+            <h1 class="text-xl font-bold flex-1 text-center">Base Weights</h1>
+            <div class="w-10"></div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="flex-1 overflow-y-auto p-4">
+            <div class="space-y-4">
+                <div class="flex items-center justify-between bg-white p-4 rounded-lg mb-3">
+                    <span class="font-medium text-gray-700">Engagement rate</span>
+                    <div class="flex items-center">
+                        <input
+                            type="number"
+                            value="0.8"
+                            step="0.1"
+                            min="0"
+                            max="1"
+                            class="w-16 text-right border rounded px-2 py-1"
+                        />
+                    </div>
+                </div>
+
+                <div class="flex items-center justify-between bg-white p-4 rounded-lg mb-3">
+                    <span class="font-medium text-gray-700">Recency</span>
+                    <div class="flex items-center">
+                        <input
+                            type="number"
+                            value="0.5"
+                            step="0.1"
+                            min="0"
+                            max="1"
+                            class="w-16 text-right border rounded px-2 py-1"
+                        />
+                    </div>
+                </div>
+
+                <div class="flex items-center justify-between bg-white p-4 rounded-lg mb-3">
+                    <span class="font-medium text-gray-700">Relationship</span>
+                    <div class="flex items-center">
+                        <input
+                            type="number"
+                            value="0.9"
+                            step="0.1"
+                            min="0"
+                            max="1"
+                            class="w-16 text-right border rounded px-2 py-1"
+                        />
+                    </div>
+                </div>
+
+                <!-- Algorithm Display -->
+                <div class="mt-8 p-4 bg-gray-50 rounded-lg">
+                    <p class="text-gray-600 italic text-sm leading-relaxed">
+                        score = (content_quality * 0.8) + 
+                        (time_factor * 0.5) + 
+                        (user_connection * 0.9)
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Navigation -->
+        <nav class="bg-white border-t border-gray-200 p-4">
+            <div class="grid grid-cols-5 items-center relative">
+                <a href="main-feed.html" class="text-gray-500 text-center">Home</a>
+                <a href="algorithm.html" class="text-blue-500 text-center">Algorithm</a>
+                <a href="#" class="text-gray-500 text-center">Camera</a>
+                <a href="search.html" class="text-gray-500 text-center">Search</a>
+                <a href="mailman.html" class="text-gray-500 text-center">Mail</a>
+            </div>
+        </nav>
+    </div>
+</body>
+</html>

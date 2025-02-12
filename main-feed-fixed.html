@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main Feed</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+    <div class="flex flex-col h-screen">
+        <!-- Header -->
+        <div class="bg-white p-4 flex justify-between items-center border-b border-gray-200">
+            <a href="profile.html" class="w-8 h-8 rounded-full bg-gray-200 overflow-hidden">
+                <img src="/api/placeholder/32/32" alt="Profile" class="w-full h-full object-cover">
+            </a>
+            <a href="audience.html" class="w-8 h-8">
+                <svg viewBox="0 0 24 24" class="w-full h-full" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="8" cy="12" r="4"/>
+                    <circle cx="16" cy="8" r="4"/>
+                    <circle cx="16" cy="16" r="4"/>
+                </svg>
+            </a>
+        </div>
+
+        <!-- Main Content -->
+        <main class="flex-1 overflow-y-auto p-4">
+            <div class="bg-white rounded-lg shadow mb-4 p-4">
+                <div class="flex items-center justify-between mb-3">
+                    <div class="flex items-center">
+                        <div class="w-10 h-10 rounded-full bg-gray-200"></div>
+                        <div class="ml-3">
+                            <div class="font-semibold">user123</div>
+                            <div class="text-gray-500 text-sm flex space-x-2">
+                                <span>#AR</span>
+                                <span>#design</span>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="text-blue-500 text-sm">Download AR</button>
+                </div>
+                
+                <div class="mb-3">
+                    <div class="w-full h-48 bg-gray-200 rounded-lg mb-2 flex items-center justify-center text-gray-500">
+                        AR Content
+                    </div>
+                </div>
+                
+                <div class="flex items-center justify-between text-gray-500">
+                    <div class="flex space-x-4">
+                        <button>♥ 24</button>
+                        <button>↻ 2</button>
+                    </div>
+                    <div class="text-sm">Reposted by user456</div>
+                </div>
+            </div>
+        </main>
+
+        <!-- Navigation -->
+        <nav class="bg-white border-t border-gray-200 p-4">
+            <div class="grid grid-cols-5 items-center relative">
+                <a href="main-feed.html" class="text-blue-500 text-center">Home</a>
+                <a href="algorithm-arrays.html" class="text-gray-500 text-center">Algorithm</a>
+                <a href="#" class="text-gray-500 text-center">Camera</a>
+                <a href="search.html" class="text-gray-500 text-center">Search</a>
+                <a href="mailman.html" class="text-gray-500 text-center">Mail</a>
+            </div>
+        </nav>
+    </div>
+</body>
+</html>
